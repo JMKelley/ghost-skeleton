@@ -1,0 +1,19 @@
+{{!< default}}
+
+<main class="main_dkcl container" role="main">
+
+  <div class="title py-4">
+    <h1>Skeleton Ghost Theme</h1>
+    <p>This theme is a complete skeleton of a Ghost Theme. Similar to a "Blank Slate". It's currently on it's initial release. It will be improved over time.</p>
+    <p>It has Bootstrap 4 installed and ready to go.</p>
+  </div>
+
+  {{#get "posts" include="tags,authors"}}
+      {{#foreach posts}}
+          {{title}}
+      {{/foreach}}
+  {{/get}}
+
+</main>
+
+{{> footer}}

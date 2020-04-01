@@ -1,0 +1,31 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+<main class="main_dkcl container" role="main">
+
+  {{#tag}}
+    <header class="title py-4">
+      <h1>{{name}}</h1>
+      {{#if description}}
+      <p class="py-2 mb-0">{{description}}</p>
+      {{else}}
+      A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
+      {{/if}}
+    </header>
+  {{/tag}}
+
+  <div class="card-deck">
+      {{#foreach posts}}
+          {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+          <a href="{{{url}}}" class="card card-shadow" role="article" itemscope itemtype="http://schema.org/Article">
+            <div class="card-body">
+              <h5 class="card-title" itemprop="headline">{{title}}</h5>
+              <p class="card-text" itemprop="articleBody">{{excerpt}}</p>
+            </div>
+          </a>
+      {{/foreach}}
+  </div>
+
+
+</main>
+{{> footer}}

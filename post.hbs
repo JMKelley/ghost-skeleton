@@ -1,0 +1,22 @@
+{{!< default}}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{#post}}
+      <article class="card post" role="article" itemscope itemtype="http://schema.org/Article">
+        <div class="card-body p-5">
+          <h1 itemprop="headline" class="h2 font-weight-bold mb-4">{{title}}</h1>
+          <time class="date_dkcl" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+          {{content}}
+          {{#if tags}}
+            {{#foreach tags}}
+              <a href="{{url}}"class="badge badge-secondary mr-2 p-2">{{name}}</a>
+            {{/foreach}}
+          {{/if}}
+        </div>
+      </article>
+      {{/post}}
+    </div>
+  </div>
+</div>
