@@ -1,4 +1,4 @@
-![Barbones Banner](https://svgur.com/i/Jdp.svg)
+![Barbones Banner](https://svgshare.com/i/Jfo.svg)
 
 
 # Skeleton Ghost Theme
