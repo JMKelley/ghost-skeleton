@@ -11,6 +11,9 @@ This is a Skeleton Ghost Theme with Bootstrap 4 Installed. It's a "Blank Slate" 
 * Zero Overheads or Weird Scripts.
 * Ghost Default Editor styles installed.
 * Default Loops.
+* 100/100 on Ghost Theme Compatibility.
+* Loads assets via Ghost's Asset Helper.
+* Doesn't Include Ghost Link. Do this at your discretion.
 
 ## Installing ##
 
