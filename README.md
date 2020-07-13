@@ -29,3 +29,5 @@ This is a Skeleton Ghost Theme with Bootstrap 4 Installed. It's a "Blank Slate" 
 - [ ] Add Various SEO Boilerplates.
 - [ ] Get Listed on the Official Ghost Store.
 
+## Sponsored ##
+* Sponsored by [Vouchertoday UK](https://www.vouchertoday.uk).
